@@ -1,21 +1,7 @@
 //manage user module
 import { test, expect } from '@playwright/test';
 test('canteen_login', async ({ page }) => {
-  //url to the login page
-  await page.goto('http://127.0.0.1:8000');
-  // credentials for login
-  //enter email
-await page.getByRole('textbox', { name: 'Email' }).click();
-await page.getByRole('textbox', { name: 'Email' }).fill('niketanbothe@sandipuniversity.edu.in');
-//enter password
-await page.getByRole('textbox', { name: 'Password' }).click();
-await page.getByRole('textbox', { name: 'Password' }).fill('123456');
-//click sign in button
-await page.getByRole('button', { name: 'Sign In' }).click();
-await page.getByRole('button', { name: 'OK' }).click();
-//Dashboard page should be visible after login(wait)
-await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
-await page.goto('http://127.0.0.1:8000/dashboard');
+  await page.goto('http://127.0.0.1:8000/dashboard');
   await expect(page.getByRole('link', { name: 'More info ' }).first()).toBeVisible();
 
    //click User in tab
@@ -61,7 +47,7 @@ await page.getByRole('button', { name: 'Yes, block it!' }).click();
 // approved the block user
 await page.getByRole('button', { name: 'Block' }).click();
 await page.getByRole('link', { name: 'Approve' }).click();
-await page.waitForTimeout(2000);
+
 //approval pop up should be visible
 await expect(page.locator('#swal2-title')).toContainText('Are you sure you want to approve this user?');
 await page.getByRole('button', { name: 'Yes, approve it!' }).click();

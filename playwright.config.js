@@ -35,20 +35,55 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    // ✅ ADD THIS — Run login.spec.js first
+    {
+      name: 'setup',
+      testMatch: '**/login.spec.js',
+    },
+
+    // ✅ CHANGE THIS — Add storageState and dependencies
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { 
+        ...devices['Desktop Chrome'],
+        storageState: 'e2e/user.json', // ✅ ADD THIS LINE
+      },
+      dependencies: ['setup'], // ✅ ADD THIS LINE
     },
 
+    // ✅ CHANGE THIS — Add storageState and dependencies
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { 
+        ...devices['Desktop Firefox'],
+        storageState: 'e2e/user.json', // ✅ ADD THIS LINE
+      },
+      dependencies: ['setup'], // ✅ ADD THIS LINE
     },
 
+    // ✅ CHANGE THIS — Add storageState and dependencies
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: { 
+        ...devices['Desktop Safari'],
+        storageState: 'e2e/user.json', // ✅ ADD THIS LINE
+      },
+      dependencies: ['setup'], // ✅ ADD THIS LINE
     },
+    // {
+    //   name: 'chromium',
+    //   use: { ...devices['Desktop Chrome'] },
+    // },
+
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
+
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {

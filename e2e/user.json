@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "XSRF-TOKEN",
+      "value": "eyJpdiI6InVtTG5WTXlYUHppTnNrMWlwOFJzclE9PSIsInZhbHVlIjoiK1M5anQvemN5OXAzdXl1aDkzcGlDMFFKR3A2dkdqOTIwSmEwcDJHNGZMejhLQlFtZ0prNTIxR3o1ZERhNHE4M25zUlVEejRnK2h1M0FNOHdMNWtnMWluR3ZKK1JFTHJ1M3llTFlueG01ZHQrenIxTjhQK1QyOS9ER0swMDZGeXQiLCJtYWMiOiJhYjI4ZTY3MGI5YmM2ZDhlOTkwMDExMDIxODgwNzZmNzNiYjUyN2NmZGIzZDQ1ZmZiNTA4MWY3ZmFhMjRhZmU0IiwidGFnIjoiIn0%3D",
+      "domain": "127.0.0.1",
+      "path": "/",
+      "expires": 1778678040.667328,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sun_backend_session",
+      "value": "eyJpdiI6IlJJaDFrV096M3VzMnFjRmttb1dia0E9PSIsInZhbHVlIjoiT2c1SHBoQjB0cEtaS1UwYjdBS0czSWlxVVorRU9lYVFuQyszZ0EwUGI5RStGNjljVkcwNWJ3RzdRMXZKWUhoc0FhRkJ4ZUxsM1hBWnJFWTNESDZkaWxkU09pZ1FlK3BFL1FsU09IczQvM2s2bVJtaHpFYThjYmJrRWZiZkNPbU8iLCJtYWMiOiI2NmJkMDYwOGE5OWIyMzllNzY3Mjc0NmQwZjI4YjFjNjA1NGU1MWZjZGNmNGMzYWM4NmEzMDM3OWNhZGQzZGExIiwidGFnIjoiIn0%3D",
+      "domain": "127.0.0.1",
+      "path": "/",
+      "expires": 1778678040.667443,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "http://127.0.0.1:8000",
+      "localStorage": [
+        {
+          "name": "AdminLTE:Demo:MessageShowed",
+          "value": "1778671741427"
+        }
+      ]
+    }
+  ]
+}
