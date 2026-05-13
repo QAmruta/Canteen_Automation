@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 test('canteen_login', async ({ page }) => {
 // dashboard page tests
 await page.goto('http://127.0.0.1:8000/dashboard');
+
   await expect(page.getByRole('link', { name: 'More info ' }).first()).toBeVisible();
 
   // New Orders test

@@ -37,6 +37,7 @@ await expect(page.locator('#swal2-title')).toContainText('Success');
 await page.getByRole('button', { name: 'OK' }).click();
 
 // visibal heading of manage canteen page
+
 await expect(page.getByRole('heading')).toContainText('Manage Canteen');
 
 });

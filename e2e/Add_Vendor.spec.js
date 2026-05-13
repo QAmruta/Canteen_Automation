@@ -117,7 +117,6 @@ if (!fs.existsSync('e2e/bug-reports')) {
 
   fs.mkdirSync('e2e/bug-reports', { recursive: true });
 }
-
 test('add_vendor', async ({ page }) => {
 
   

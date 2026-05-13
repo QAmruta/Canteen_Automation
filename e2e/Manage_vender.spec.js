@@ -95,16 +95,19 @@ await page.getByRole('textbox', { name: 'MICR code of the bank branch:' }).click
 await page.getByRole('textbox', { name: 'MICR code of the bank branch:' }).fill('48578885458545');
 await page.getByRole('textbox', { name: 'Details of Other bankers (For' }).click();
 await page.getByRole('textbox', { name: 'Details of Other bankers (For' }).fill('NA');
+
 page.once('dialog', dialog => {
     console.log(`Dialog message: ${dialog.message()}`);
     dialog.dismiss().catch(() => {});
   });
+
   await page.getByRole('button', { name: 'Save changes' }).click();
 await expect(page.getByRole('button', { name: 'Save changes' })).toBeVisible();
 page.once('dialog', dialog => {
     console.log(`Dialog message: ${dialog.message()}`);
     dialog.dismiss().catch(() => {});
   });
+  
   await page.getByRole('button', { name: 'Save changes' }).click();
 
 });

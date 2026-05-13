@@ -1,7 +1,7 @@
 // login page test
 import { test, expect } from '@playwright/test';
 test('canteen_login', async ({ page }) => {
-   // ✅ No login needed — session already saved
+   // No login needed — session already saved
   await page.goto('http://127.0.0.1:8000/dashboard');
 
 await page.getByRole('link', { name: ' Management ' }).click();
@@ -37,7 +37,6 @@ await page.getByRole('button', { name: 'Update Canteen' }).click();
 // await expect(page.locator('#swal2-title')).toContainText('Success');
 // await page.getByRole('button', { name: 'OK' }).click();
 //delete canteen
-
 
 
  });

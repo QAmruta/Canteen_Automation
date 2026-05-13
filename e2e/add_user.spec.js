@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 test('canteen_login', async ({ page }) => {
  
-  // ✅ No login needed — session already saved
+  // No login needed — session already saved
   await page.goto('http://127.0.0.1:8000/dashboard');
 //user- Add users module test
   //click User in tab

@@ -37,4 +37,5 @@ setup('login', async ({ page }) => {
   // Save the session (cookies, localStorage) to a file
   await page.context().storageState({ path: authFile });
 
+  
 });
