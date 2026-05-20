@@ -37,15 +37,15 @@ page.once('dialog', dialog => {
     console.log(`Dialog message: ${dialog.message()}`);
     dialog.dismiss().catch(() => {});
   });
-  await page.getByRole('textbox', { name: 'Date of Establishment:' }).fill('2026-05-15');
+  await page.getByRole('textbox', { name: 'Date of Establishment:' }).fill('2026-05-17');
 await page.getByRole('textbox', { name: 'Name of Company*:' }).click();
 await page.getByRole('textbox', { name: 'Name of Company*:' }).press('ArrowRight');
 
 await page.getByRole('textbox', { name: 'Name of Company*:' }).fill('JAI HANUMAN HP GAS GRAMIN VITRAK 123');
 await page.getByRole('textbox', { name: 'GST Number:' }).dblclick();
-await page.getByRole('textbox', { name: 'GST Number:' }).fill('1452585655555');
+await page.getByRole('textbox', { name: 'GST Number:' }).fill('1452587655555');
 await page.getByRole('textbox', { name: 'Cheque Name of Company' }).click();
-await page.getByRole('textbox', { name: 'Cheque Name of Company' }).fill('ASE');
+await page.getByRole('textbox', { name: 'Cheque Name of Company' }).fill('ASEAA');
 await page.getByRole('textbox', { name: 'Work Description:' }).dblclick();
 await page.getByRole('textbox', { name: 'Work Description:' }).fill('NA');
 await page.getByRole('textbox', { name: 'Registered Office Address:' }).click();
@@ -65,9 +65,9 @@ await page.locator('#registeredState').press('Enter');
 await page.locator('#editForm div').filter({ hasText: 'Registered Office Address:' }).click();
 
 await page.getByRole('textbox', { name: 'Email' }).click();
-await page.getByRole('textbox', { name: 'Email' }).fill('amruta@gmail.com');
+await page.getByRole('textbox', { name: 'Email' }).fill('amruta122@gmail.com');
 await page.getByRole('textbox', { name: 'Website' }).click();
-await page.getByRole('textbox', { name: 'Website' }).fill('xyz@company.in');
+await page.getByRole('textbox', { name: 'Website' }).fill('xyz33@company.in');
 await page.getByRole('textbox', { name: 'Branch Office Address:' }).click();
 await page.getByRole('textbox', { name: 'Branch Office Address:' }).fill('flat 123');
 await page.locator('#branchCity').click();
@@ -77,7 +77,7 @@ await page.locator('#branchDistrict').fill('mumbai');
 await page.locator('#branchState').click();
 await page.locator('#branchState').fill('maharashra');
 await page.locator('#branchFax').click();
-await page.locator('#branchFax').fill('1452487545658');
+await page.locator('#branchFax').fill('1457687545658');
 await page.getByRole('textbox', { name: 'Contact No.' }).click();
 await page.getByRole('textbox', { name: 'Contact No.' }).fill('9658965896');
 await page.getByRole('textbox', { name: 'Name of Bank:' }).click();
@@ -87,12 +87,12 @@ await page.getByRole('textbox', { name: 'Name of Bank Branch:' }).fill('mulund')
 await page.getByRole('textbox', { name: 'City / Place:' }).click();
 await page.getByRole('textbox', { name: 'City / Place:' }).fill('mulund');
 await page.getByRole('textbox', { name: 'Account No.:' }).click();
-await page.getByRole('textbox', { name: 'Account No.:' }).fill('124587896589');
+await page.getByRole('textbox', { name: 'Account No.:' }).fill('124580896589');
 await page.getByLabel('Account Type:').selectOption('current');
 await page.getByRole('textbox', { name: 'IFSC code of the bank branch:' }).click();
-await page.getByRole('textbox', { name: 'IFSC code of the bank branch:' }).fill('4875845555485');
+await page.getByRole('textbox', { name: 'IFSC code of the bank branch:' }).fill('4875869555485');
 await page.getByRole('textbox', { name: 'MICR code of the bank branch:' }).click();
-await page.getByRole('textbox', { name: 'MICR code of the bank branch:' }).fill('48578885458545');
+await page.getByRole('textbox', { name: 'MICR code of the bank branch:' }).fill('48570385458545');
 await page.getByRole('textbox', { name: 'Details of Other bankers (For' }).click();
 await page.getByRole('textbox', { name: 'Details of Other bankers (For' }).fill('NA');
 

@@ -91,19 +91,7 @@ await expect(page.getByRole('heading', { name: 'Manage Inventory', exact: true }
   ==============================
   `);
 
-  // //send stock
-  // await page.getByRole('link', { name: 'Send Stock' }).first().click();
-  // await expect(page.getByRole('heading', { name: 'Send Stock' })).toBeVisible();
-  // await page.getByRole('spinbutton', { name: 'Quantity to Use (Kg/Ltr)*' }).click();
-  // await page.getByRole('spinbutton', { name: 'Quantity to Use (Kg/Ltr)*' }).fill('0');
-  // await page.getByRole('textbox', { name: 'Scheduled Date*' }).fill('2026-05-13');
   
-  // page.once('dialog', dialog => {
-  //   console.log(`Dialog message: ${dialog.message()}`);
-  //   dialog.dismiss().catch(() => {});
-  // });
-  // await page.getByRole('button', { name: 'Save changes' }).click();
- 
 // ============================
   // SEND STOCK
   // ============================

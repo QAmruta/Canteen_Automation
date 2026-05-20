@@ -17,7 +17,7 @@ await page.getByRole('link', { name: ' Sites' }).click();
 await expect(page.getByRole('heading', { name: 'Sites' })).toBeVisible();
 await page.getByRole('textbox', { name: 'Only letters, numbers, spaces' }).click();
 // Add site with unique name
-await page.getByRole('textbox', { name: 'Only letters, numbers, spaces' }).fill('yoyoo Site');
+await page.getByRole('textbox', { name: 'Only letters, numbers, spaces' }).fill('japan Site');
 await expect(page.getByRole('button', { name: 'Add Site' })).toBeVisible();
 await page.getByRole('button', { name: 'Add Site' }).click();
 //success message verification

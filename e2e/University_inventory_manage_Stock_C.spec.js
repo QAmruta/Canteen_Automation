@@ -17,7 +17,7 @@ await page.getByRole('link', { name: ' Stock Category' }).click();
 await expect(page.getByRole('heading', { name: 'Stock Category' })).toBeVisible();
 //Enter category name unique
 await page.getByRole('textbox', { name: 'Category Name:*' }).click();
-await page.getByRole('textbox', { name: 'Category Name:*' }).fill('clipss');
+await page.getByRole('textbox', { name: 'Category Name:*' }).fill('CGP');
 await page.getByRole('button', { name: 'Add Category' }).click();
 //Success message verification
 await expect(page.locator('#swal2-title')).toContainText('Success');

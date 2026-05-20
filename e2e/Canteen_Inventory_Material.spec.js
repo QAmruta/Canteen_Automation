@@ -17,12 +17,12 @@ await expect(page.getByRole('heading', { name: 'Material', exact: true })).toBeV
   await page.locator('#addMaterialForm select[name="campus_id"]').selectOption('2');
   //material name do not add duplicate material name for same campus because material are common for both campus and it will be reused. if you want to add new material then select other category and add new category name.
   await page.getByRole('textbox', { name: 'Material Name*' }).click();
-  await page.getByRole('textbox', { name: 'Material Name*' }).fill('bottal water');
+  await page.getByRole('textbox', { name: 'Material Name*' }).fill('bottale wateres');
   //select type
   await page.getByLabel('Type KG/Ltr*').selectOption('NO');
   //enter hsm code
   await page.getByRole('textbox', { name: 'HSM Code' }).click();
-  await page.getByRole('textbox', { name: 'HSM Code' }).fill('12006');
+  await page.getByRole('textbox', { name: 'HSM Code' }).fill('1206');
   //select new category
   await page.getByLabel('Category*', { exact: true }).selectOption('other');
   await page.getByRole('textbox', { name: 'New Category*' }).click();

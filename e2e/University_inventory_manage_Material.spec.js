@@ -18,9 +18,9 @@ await expect(page.getByRole('heading', { name: 'Material', exact: true })).toBeV
 await page.getByLabel('Category Name*').selectOption('1');
 //Add material with unique name and code
 await page.getByRole('textbox', { name: 'Material Name*' }).click();
-await page.getByRole('textbox', { name: 'Material Name*' }).fill('Electric Geyser 78 Ltr');
+await page.getByRole('textbox', { name: 'Material Name*' }).fill('Electric Geyser 62 Ltr');
 await page.getByRole('textbox', { name: 'Material Code*' }).click();
-await page.getByRole('textbox', { name: 'Material Code*' }).fill('1097');
+await page.getByRole('textbox', { name: 'Material Code*' }).fill('1057');
 
 await page.getByLabel('Type KG/Ltr*').selectOption('BUN');
 await page.getByRole('button', { name: 'Add Material' }).click();
@@ -30,10 +30,10 @@ await expect(page.getByRole('button', { name: 'OK' })).toBeVisible();
 await page.getByRole('button', { name: 'OK' }).click();
 //Search filed
 await page.getByRole('searchbox', { name: 'Search any Material' }).click();
-await page.getByRole('searchbox', { name: 'Search any Material' }).fill('BELT B-57');
+await page.getByRole('searchbox', { name: 'Search any Material' }).fill('BELT B-100');
 //click search result and open edit material form
 await expect(page.getByRole('heading', { name: 'Existing Materials' })).toBeVisible();
-await page.getByRole('row', { name: 'Hardware BELT B-57 NOS Edit' }).locator('button').click();
+await page.getByRole('row', { name: 'Hardware BELT B-100 NOS Edit' }).locator('button').click();
 await expect(page.getByRole('heading', { name: 'Edit Material' })).toBeVisible();
 //update material name and code
 await page.getByRole('textbox', { name: 'Material Name:*' }).click();
